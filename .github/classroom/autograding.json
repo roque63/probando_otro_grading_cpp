@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+     "name": "Test 1 - datos de entrada: 1",
+     "setup": "g++ -g -o main main.cpp Producto.cpp Verdura.cpp Combo.cpp Pedido.cpp",
+     "run": "./main",
+     "input": "1",
+     "output": "V1-$75-10-$1500-Junio\nC1-$40-15-$450-1\nV2-$45-20-$1800-Junio\nC2-$45-10-$630-2\nV3-$70-11-$2310-Regalado\nC3-$75-14-$800-1\nV4-$85-10-$2550-Regalado\nC4-$40-12-$690-2\n8 articulos\nTotal a pagar $10730\n",
+     "comparison": "included",
+     "timeout": 2,
+     "points": 25
+   },
+   {
+     "name": "Test 2 - datos de entrada: 2",
+     "setup": "g++ -g -o main main.cpp Producto.cpp Verdura.cpp Combo.cpp Pedido.cpp",
+     "run": "./main",
+     "input": "2",
+     "output": "V1-$75-10-$1500-Junio\nV2-$45-20-$2700-Regalado\nV3-$70-11-$1540-Junio\nV4-$85-10-$8500-Julio\n4 articulos\nTotal a pagar $14240\n",
+     "comparison": "included",
+     "timeout": 2,
+     "points": 25
+   },
+   {
+     "name": "Test 3 - datos de entrada: 3",
+     "setup": "g++ -g -o main main.cpp Producto.cpp Verdura.cpp Combo.cpp Pedido.cpp",
+     "run": "./main",
+     "input": "3",
+     "output": "C1-$40-15-$450-1\nC2-$45-10-$630-2\nC3-$75-14-$800-1\nC4-$40-12-$690-2\n4 articulos\nTotal a pagar $2570\n",
+     "comparison": "included",
+     "timeout": 2,
+     "points": 25
+   },
+ {
+     "name": "Test 4 -datos de entrada: 4",
+     "setup": "g++ -g -o main main.cpp Producto.cpp Verdura.cpp Combo.cpp Pedido.cpp",
+     "run": "./main",
+     "input": "4",
+     "output": "P1,$30,10,$300\nP2,$10,15,$150\nP3,$20,20,$400\nP4,$10,10,$100\nP5,$70,11,$770\nP6,$45,14,$630\nP7,$10,14,$140\nP8,$45,15,$675\n8 articulos\nTotal a pagar $3165\n",
+     "comparison": "included",
+     "timeout": 2,
+     "points": 25
+   }
+  ]
+}
